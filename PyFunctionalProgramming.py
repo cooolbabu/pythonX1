@@ -5,6 +5,7 @@ my_pets = ['sisi', 'bibi', 'titi', 'carla', 'maya']
 
 def caps(item):
        return item.capitalize()
+       
 
 print(list(map(caps,my_pets)))
 
