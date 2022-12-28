@@ -1,5 +1,16 @@
 from functools import reduce
 
+## map, filter, reduce
+#1 MAP function - Capitalize all of the pet names and print the list
+my_pets = ['sisi', 'bibi', 'titi', 'carla', 'maya']
+
+def caps(item):
+    return item.capitalize()
+
+print(list(map(caps,my_pets))) ## Map takes a function and iterable as parameters
+
+
+
 ## *args and *kwargs
 
 def all_aboard(a, *args, **kw): 
@@ -15,13 +26,7 @@ print(result)
 print('-- Finished processing dictionary')
 
 
-#1 Capitalize all of the pet names and print the list
-my_pets = ['sisi', 'bibi', 'titi', 'carla', 'maya']
 
-def caps(item):
-    return item.capitalize()
-
-print(list(map(caps,my_pets)))
 
 
 
