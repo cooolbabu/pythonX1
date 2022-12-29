@@ -56,3 +56,15 @@ def totals(acc, item):
 print(reduce(totals, my_numbers + scores))
 
 print(scores + my_numbers)
+
+## Comprehension
+simple_dict = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": 4,
+    "e": 5
+}
+
+my_dict = {k:v**2 for k,v in simple_dict.items() if v % 2 == 0}
+print(my_dict)
